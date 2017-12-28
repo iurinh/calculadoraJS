@@ -1,4 +1,6 @@
-//Inicializa campo de digitos
+//####################################################
+//Inicializa campo de digitos#########################
+//####################################################
 var valorMemoria = 0;
 var operacao;
 var novaOperacao;
@@ -6,7 +8,9 @@ var campoDigitos = document.getElementById("campo-digitos");
 
 campoDigitos.value = 0;
 
-//Insere ouvintes do evento click nos botoes
+//####################################################
+//Insere ouvintes do evento click nos botoes##########
+//####################################################
 document.getElementById("1").addEventListener("click", digitar1);
 document.getElementById("2").addEventListener("click", digitar2);
 document.getElementById("3").addEventListener("click", digitar3);
@@ -30,7 +34,9 @@ document.getElementById("reiniciar").addEventListener("click", reiniciar);
 document.getElementById("inverter-sinal").addEventListener("click", inverterSinal);
 document.getElementById("obter-resultado").addEventListener("click", obterResultado);
 
-//Funcoes executadas pelos botoes
+//####################################################
+//Funcoes executadas pelos botoes#####################
+//####################################################
 function digitar1(){
     digitar('1');
 }
@@ -113,7 +119,9 @@ function virgula(){
     digitar('.');
 }
 
-//Logica de utilização dos eventos
+//####################################################
+//Logica de utilização dos eventos####################
+//####################################################
 function digitar(valor){
     if(campoEstaZerado() || ehNovaOperacao())
         limparCampo();
