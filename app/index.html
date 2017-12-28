@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>CalculadoraJS</title>
+    <meta charset="utf-8">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    
+  </head>
+  <body>
+    <main>
+        <div id="container">
+            <input id="campo-digitos" class="campo-digitos" disabled></input>
+            
+            <!-- Operações -->
+            <input type="button" id="somar"         value="+"       class="operador"></input>
+            <input type="button" id="subtrair"      value="-"       class="operador"></input>
+            <input type="button" id="multiplicar"   value="&times;" class="operador"></input>
+            <input type="button" id="dividir"       value="&divide;"class="operador"></input>
+            <input type="button" id="elevar"        value="x&#8319;"class="operador"></input>
+            <input type="button" id="radiciacao"          value="&#8319;&radic;"class="operador"></input>
+            
+            <!-- Funcionalidades Extras -->
+            <input type="button" id="virgula"           value=","       class="extra"></input>
+            <input type="button" id="reiniciar"         value="C"       class="extra"></input>
+            <input type="button" id="inverter-sinal"    value="&#8723;" class="extra"></input>
+            <input type="button" id="obter-resultado"   value="="       class="extra"></input>
+
+            <!-- Digitos -->
+            <input type="button" id="1" value="1" class="digito"></input>
+            <input type="button" id="2" value="2" class="digito"></input>
+            <input type="button" id="3" value="3" class="digito"></input>
+            <input type="button" id="4" value="4" class="digito clear"></input>
+            <input type="button" id="5" value="5" class="digito"></input>
+            <input type="button" id="6" value="6" class="digito"></input>
+            <input type="button" id="7" value="7" class="digito clear"></input>
+            <input type="button" id="8" value="8" class="digito"></input>
+            <input type="button" id="9" value="9" class="digito"></input>
+            <input type="button" id="0" value="0" class="digito clear center"></input>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- Lógica -->
+    <script  type="text/javascript" src="index.js" ></script>
+  </body>
+</html>
